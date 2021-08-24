@@ -1,0 +1,2 @@
+rootProject.name='RandomMealGenerator_app_by_command'
+include ':app'

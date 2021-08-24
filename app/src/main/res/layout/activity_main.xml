@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/recipe_photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+    </ImageView>
+    <Button
+        android:id="@+id/get_random_meal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET RANDOM MEAL">
+    </Button>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/recipe_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text=" Recipe name"
+                android:textSize="20sp"
+                android:padding="10dp">
+            </TextView>
+            <TextView
+                android:id="@+id/ingredients_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Ingredients"
+                android:padding="10dp">
+            </TextView>
+            <TextView
+                android:id="@+id/instructions_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Instructions"
+                android:padding="10dp">
+            </TextView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
